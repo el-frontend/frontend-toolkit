@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "start:dev": "ts-node src/index.ts",
+    "build": "rimraf dist && tsc",
+    "dev": "npm run build && node dist/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ./src/**/*",
+    "format": "prettier --write ./src/**/*"
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/commander": "^2.12.2",
+    "@types/inquirer": "^9.0.7",
+    "colorette": "^2.0.20",
+    "commander": "^12.1.0",
+    "figlet": "^1.7.0",
+    "inquirer": "^10.2.2",
+    "ora": "^8.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^22.5.4",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.4",
+    "prettier": "3.3.3",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0"
+  },
+  "bin": {
+    "frontend-cli": "./dist/index.js"
+  }
+}

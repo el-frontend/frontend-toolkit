@@ -1,0 +1,1 @@
+export type Framework = 'ReactJS' | 'NextJS' | 'VueJS' | 'Astro' | 'Vue' | 'Nuxt' | 'Angular';
