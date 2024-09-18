@@ -1,9 +1,10 @@
 import { Framework } from "./frameworks";
+import { Library } from "./libraries";
 
 export type Answer = {
   projectName: string;
   framework: Framework;
-  libraries: string[];
+  libraries: Library[];
   ui: string;
   typescript: boolean;
 };

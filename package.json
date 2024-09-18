@@ -15,7 +15,8 @@
     "commander": "^12.1.0",
     "figlet": "^1.7.0",
     "inquirer": "^10.2.2",
-    "ora": "^8.1.0"
+    "ora": "^8.1.0",
+    "yocto-spinner": "^0.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.10.0",
@@ -33,5 +34,8 @@
   },
   "bin": {
     "frontend-cli": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

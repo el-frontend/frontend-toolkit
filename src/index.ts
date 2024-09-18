@@ -99,10 +99,9 @@ program.action(() => {
         },
       },
     ])
-    .then((answers) => {
+    .then(async (answers) => {
       console.log(`Response: ${JSON.stringify(answers)}`);
-      console.log(`Hey there, ${answers.projectName}!`);
-      executor(answers);
+      await executor(answers);
     });
 });
 
