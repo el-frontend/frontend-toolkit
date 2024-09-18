@@ -98,6 +98,42 @@ program.action(() => {
           return answers.framework === "ReactJS";
         },
       },
+      {
+        type: "confirm",
+        name: "ssr",
+        message: "Do you want to use SSR?",
+        default: true,
+        transformer: (answer) => (answer ? "Yes" : "No"),
+        when(answers) {
+          return answers.framework === "Angular";
+        },
+      },
+      {
+        type: "list",
+        name: "stylesheet",
+        message: blue("Which stylesheet format would you like to use?"),
+        choices: [
+          {
+            name: "CSS",
+            value: "CSS",
+          },
+          {
+            name: "Sass (SCSS)",
+            value: "SCSS",
+          },
+          {
+            name: "Sass (Indented)",
+            value: "SASS",
+          },
+          {
+            name: "LESS",
+            value: "LESS",
+          },
+        ],
+        when(answers) {
+          return answers.framework === "Angular";
+        },
+      },
     ])
     .then(async (answers) => {
       console.log(`Response: ${JSON.stringify(answers)}`);

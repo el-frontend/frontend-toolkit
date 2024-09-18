@@ -1,4 +1,5 @@
 import { Framework } from "./frameworks";
+import { Stylesheet } from "./global";
 import { Library } from "./libraries";
 
 export type Answer = {
@@ -7,4 +8,6 @@ export type Answer = {
   libraries: Library[];
   ui: string;
   typescript: boolean;
+  stylesheet: Stylesheet
+  ssr: boolean;
 };

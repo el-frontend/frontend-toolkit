@@ -1,0 +1,1 @@
+export type Stylesheet = "CSS" | "SCSS" | "SASS" | "LESS";

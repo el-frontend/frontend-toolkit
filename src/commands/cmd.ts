@@ -2,7 +2,7 @@ import { spawn } from "child_process";
 
 export function cmd(command: string, showOutput = true) {
   return new Promise((resolve, reject) => {
-    const p = spawn(command, { shell: true, stdio: "inherit", detached: true  });
+    const p = spawn(command, { shell: true, stdio: "inherit", detached: false  });
 
     p.stdout?.on("data", function (data) {
       if (showOutput) console.log("stdout: " + data.toString());

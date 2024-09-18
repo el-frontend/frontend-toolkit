@@ -1,4 +1,6 @@
+import { Answer } from "../types/answer";
 import { Framework } from "../types/frameworks";
+import { Stylesheet } from "../types/global";
 
 export function generateViteApp(
   appName: string,
@@ -30,20 +32,32 @@ export function generateAstroApp(appName: string, typescript: boolean) {
   return `npm create astro@latest ${appName} -- --template minimal --typescript ${typescript ? "strict" : "strictest"} --no-install --no`;
 }
 
+export function generateNuxtApp(appName: string) {
+  return `npx --yes nuxi@latest init ${appName} --no-install --package-manager 'npm' --no-git-init`;
+}
+
+export function generateAngularApp(appName: string, typscript: boolean, ssr: boolean, stylesheet: Stylesheet) {
+  // TODO Add ssr config option
+  return `npm install -g @angular/cli && ng new ${appName} ${typscript ? "--strict" : ""} --skip-install --skip-git ${ssr ? "--ssr" : ""} --style ${stylesheet.toLowerCase()}`;
+}
+
 export function generateApp(
   appName: string,
-  typescript: boolean,
-  framework: Framework,
+  answer: Answer
 ) {
-  switch (framework) {
+  switch (answer.framework) {
     case "ReactJS":
-      return generateViteApp(appName, typescript, "ReactJS");
+      return generateViteApp(appName, answer.typescript, "ReactJS");
     case "Vue":
-      return generateViteApp(appName, typescript, "Vue");
+      return generateViteApp(appName, answer.typescript, "Vue");
     case "NextJS":
-      return generateNextJsApp(appName, typescript);
+      return generateNextJsApp(appName, answer.typescript);
     case "Astro":
-      return generateAstroApp(appName, typescript);
+      return generateAstroApp(appName, answer.typescript);
+    case "Nuxt":
+      return generateNuxtApp(appName);
+    case "Angular":
+      return generateAngularApp(appName, answer.typescript, answer.ssr, answer.stylesheet);
     default:
       throw new Error("Invalid framework");
   }

@@ -13,13 +13,9 @@ const dynamicImportOra = async () => {
 
 export const executor = async (args: Answer) => {
   const ora = await dynamicImportOra();
-  const { projectName, framework, libraries, ui, typescript } = args;
+  const { projectName } = args;
 
-  const appCommand = generateApp(
-    getProjectName(projectName),
-    typescript,
-    framework,
-  );
+  const appCommand = generateApp(getProjectName(projectName), args);
 
   try {
     const cpLoader = ora({
