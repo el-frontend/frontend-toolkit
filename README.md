@@ -46,13 +46,13 @@ Follow the prompts to set up your new frontend project quickly and efficiently.
 - [ ]  What are the first functionalities we should include
   - [x]  Create app, first choose name
   - [ ]  Next choose framework/library
-    - [ ]  ReactJS
-    - [ ]  NextJS
-    - [ ]  Astro
-    - [ ]  Vue?
+    - [x]  ReactJS
+    - [x]  NextJS
+    - [x]  Astro
+    - [x]  Vue?
     - [ ]  Nuxt?
     - [ ]  Svelte?
-    - [ ]  Angular
+    - [x]  Angular
   - [ ]  Choose libraries for the project
     - [ ]  ReactJS
       - [ ]  Router
@@ -68,3 +68,6 @@ Follow the prompts to set up your new frontend project quickly and efficiently.
 - [ ]  Create README and how to contribute on GitHub
 - [ ]  Promote it
 - [ ]  Remove nodemon
+- [ ]  Add husky and lint stage configurations
+- [ ]  Add semantic-release and commitizen
+- [ ]  Add tests

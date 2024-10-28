@@ -23,7 +23,7 @@ console.log(
 );
 
 console.log(
-  magenta(figlet.textSync("Frontend CLI", { horizontalLayout: "full" })),
+  magenta(figlet.textSync("Frontend Toolkit", { horizontalLayout: "full" })),
 );
 
 console.log(
