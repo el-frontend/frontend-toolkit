@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main # or main
+      - next
+      - beta
 
 permissions:
   contents: read # for checkout
