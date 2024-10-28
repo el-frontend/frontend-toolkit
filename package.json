@@ -6,7 +6,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix ./src/**/*",
     "format": "prettier --write ./src/**/*",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "publish:lib": "npm run build && npm publish"
   },
   "dependencies": {
     "@types/chalk": "^2.2.0",
