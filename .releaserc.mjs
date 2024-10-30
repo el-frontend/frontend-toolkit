@@ -17,12 +17,7 @@ export default {
         changelogFile: "CHANGELOG.md",
       },
     ],
-    [
-      "@semantic-release/npm",
-      {
-        pkgRoot: "dist",
-      },
-    ],
+    "@semantic-release/npm",
     [
       "@semantic-release/git",
       {
