@@ -5,7 +5,7 @@ export const librariesMap: Record<Library, { dependencies: Array<string> }> = {
     dependencies: ["react-router-dom"],
   },
   "react-query": {
-    dependencies: ["react-query"],
+    dependencies: ["@tanstack/react-query"],
   },
   "react-hook-form": {
     dependencies: ["react-hook-form"],

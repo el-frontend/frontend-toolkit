@@ -5,6 +5,7 @@ import { Answer } from "../types/answer";
 import { Library } from "../types/libraries";
 import { getProjectName } from "../utils/names";
 import { cmd } from "./cmd";
+import { showFinalMessage } from "./ui";
 
 const dynamicImportOra = async () => {
   const { default: ora } = await import("ora");
@@ -13,7 +14,7 @@ const dynamicImportOra = async () => {
 
 export const executor = async (args: Answer) => {
   const ora = await dynamicImportOra();
-  const { projectName } = args;
+  const { projectName, libraries, framework } = args;
 
   const appCommand = generateApp(getProjectName(projectName), args);
 
@@ -31,11 +32,13 @@ export const executor = async (args: Answer) => {
 
     // install dependencies
     const diLoader = ora(`Instaling dependencies...`).start();
-    // TODO uncomment this line
-    // installDependencies(libraries);
+    await installDependencies(libraries);
     diLoader.succeed(green(`Dependencies installed successfully!`));
 
     // generate UI views
+
+    // show final message
+    showFinalMessage(projectName, framework);
   } catch (error) {
     console.log(`An error occurred: ${error}`);
   }
