@@ -55,7 +55,7 @@
   "lint-staged": {
     "*./src/{tsx,ts,js}": "eslint --cache --fix",
     "*./src/**/*": "prettier --write",
-    "*": "git add ."
+    "*": "git add"
   },
   "config": {
     "commitizen": {
