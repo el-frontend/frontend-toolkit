@@ -1,9 +1,20 @@
 {
   "name": "@elfrontend/toolkit",
   "version": "1.0.0-beta.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "cli",
+    "frontend"
+  ],
+  "author": "Carlos Chao(ElFrontend)",
   "scripts": {
     "start:dev": "ts-node src/index.ts",
-    "build": "rimraf dist && tsc",
+    "build": "tsup",
     "dev": "npm run build && node dist/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix ./src/**/*",
@@ -43,11 +54,12 @@
     "rimraf": "^6.0.1",
     "semantic-release": "^24.2.0",
     "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.5.0"
   },
   "bin": {
-    "frontend-cli": "./dist/index.js"
+    "frontend-cli": "dist/index.js"
   },
   "engines": {
     "node": ">=18.0.0"
