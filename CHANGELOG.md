@@ -1,3 +1,10 @@
+# [1.0.0-beta.5](https://github.com/gsi-chao/frontend-toolkit/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2024-10-30)
+
+
+### Features
+
+* update installed command ([8d60701](https://github.com/gsi-chao/frontend-toolkit/commit/8d60701affb12e35cd8c9ec26eee992393a9e195))
+
 # [1.0.0-beta.4](https://github.com/gsi-chao/frontend-toolkit/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2024-10-30)
 
 
