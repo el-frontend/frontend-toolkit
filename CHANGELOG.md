@@ -1,3 +1,10 @@
+# [1.0.0-beta.6](https://github.com/gsi-chao/frontend-toolkit/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2024-12-05)
+
+
+### Features
+
+* **ui:** add integrations with ui libraries ([3434d87](https://github.com/gsi-chao/frontend-toolkit/commit/3434d8799573bec8a21f65c5a0a4fbc93e6258e0))
+
 # [1.0.0-beta.5](https://github.com/gsi-chao/frontend-toolkit/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2024-10-30)
 
 
