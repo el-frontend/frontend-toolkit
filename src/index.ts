@@ -3,6 +3,7 @@
 import {
   black,
   blue,
+  gray,
   green,
   greenBright,
   magenta,
@@ -93,9 +94,19 @@ program.action(() => {
         type: "list",
         name: "ui",
         message: blue("What UI library do you want to include?"),
-        choices: ["shadcn/ui", "tailwind", "MUI", "Ant Design"],
+        choices: [
+          { name: gray("Shadcn/UI"), value: "shadcn/ui" },
+          {
+            name: green("TailwindCSS"),
+            value: "tailwindcss",
+          },
+          { name: blue("MUI"), value: "mui" },
+          { name: magenta("Ant Design"), value: "ant-design" },
+        ],
         when(answers) {
-          return answers.framework === "ReactJS";
+          return (
+            answers.framework === "ReactJS" || answers.framework === "NextJS"
+          );
         },
       },
       {
@@ -136,7 +147,6 @@ program.action(() => {
       },
     ])
     .then(async (answers) => {
-      console.log(`Response: ${JSON.stringify(answers)}`);
       await executor(answers);
     });
 });

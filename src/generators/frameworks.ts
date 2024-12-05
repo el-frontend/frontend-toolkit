@@ -25,7 +25,7 @@ export function generateViteApp(
 // }
 
 export function generateNextJsApp(appName: string, typescript: boolean) {
-  return `npx --yes create-next-app@latest ${appName} ${typescript ? "--ts" : "--js"} --app --eslint --src-dir --import-alias '@/*' --no-tailwind --skip-install`;
+  return `npx --yes create-next-app@latest ${appName} ${typescript ? "--ts" : "--js"} --app --eslint --src-dir --import-alias '@/*' --no-tailwind --skip-install --turbopack`;
 }
 
 export function generateAstroApp(appName: string, typescript: boolean) {

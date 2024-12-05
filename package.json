@@ -1,7 +1,10 @@
 {
   "name": "elfrontend-toolkit",
   "version": "1.0.0-beta.5",
-  "repository": "https://github.com/gsi-chao/frontend-toolkit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsi-chao/frontend-toolkit.git"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

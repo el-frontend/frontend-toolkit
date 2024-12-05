@@ -33,7 +33,7 @@ Follow the prompts to set up your new frontend project quickly and efficiently.
 
 - [ ]  Research name availability for frontend-cli or frontend-toolkit
   - [ ]  Pending for names
-    - [x]  frontend-toolkit
+    - [x]  elfrontend-toolkit
     - [ ]  elfrontend-cli
     - [ ]  elfrontend-toolkit
     - [ ]  elfront
