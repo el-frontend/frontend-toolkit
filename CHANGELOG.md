@@ -1,3 +1,10 @@
+# [1.0.0-beta.7](https://github.com/gsi-chao/frontend-toolkit/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2024-12-28)
+
+
+### Bug Fixes
+
+* update package name in readme ([dfc8ad5](https://github.com/gsi-chao/frontend-toolkit/commit/dfc8ad569165198bb20cb221e5882b906d340f38))
+
 # [1.0.0-beta.6](https://github.com/gsi-chao/frontend-toolkit/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2024-12-05)
 
 
