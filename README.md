@@ -13,10 +13,10 @@
 
 ### Installation
 
-To install **frontend-toolkit**, run:
+To install **elfrontend-toolkit**, run:
 
 ```bash
-npm install -g frontend-toolkit
+npm install -g elfrontend-toolkit
 ```
 
 ### Usage
@@ -24,7 +24,7 @@ npm install -g frontend-toolkit
 Start the interactive assistant with:
 
 ```bash
-frontend-toolkit
+frontend-cli
 ```
 
 Follow the prompts to set up your new frontend project quickly and efficiently.
@@ -35,7 +35,6 @@ Follow the prompts to set up your new frontend project quickly and efficiently.
   - [ ]  Pending for names
     - [x]  elfrontend-toolkit
     - [ ]  elfrontend-cli
-    - [ ]  elfrontend-toolkit
     - [ ]  elfront
     - [ ]  elfront-cli
 - [ ]  Research how to create a CLI
